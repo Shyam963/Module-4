@@ -1,34 +1,45 @@
 # Exp.No:17  
-## EXCEPTION HANDLING
+## EXCEPTION HANDLING - INDEX ERROR
 
 ---
 
 ### AIM  
-To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
+To accept a list of elements from the user and display a specific index; if the index is out of range, print a custom message using exception handling.
 
----
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Read a string `input_str` from the user using `input()`.  
-3. Split the input string using commas (`,`) to create a list of grades.  
-4. Use a `try` block to attempt converting each item in the grades list to an integer and store the result in `l1`.  
-5. If the conversion is successful, print the list `l1` containing the integer values.  
-6. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: `"The grades you entered were in an invalid format."` along with the original grades list.  
-7. Terminate the program.
+1.	Begin the program.
+2.	Accept the number of elements from the user.
+3.	Create an empty list and use a loop to take input for list elements.
+4.	Display the list.
+5.	Use a try-except block to print the element at index 6.
+6.	In case of an IndexError, print "6 is not accepted".
+7.	Terminate the program.
 
----
 
 ### PROGRAM
 
 ```
-Reg.No
-Name
+Reg.No:212222220045
+Name:S Shyam
 Add Your Code Here
+try:
+    n = int(input())
+    a = []
+    for i in range(n):
+        element = int(input())
+        a.append(element)
+    print(a)
+    print(a[6])
 
+except IndexError:
+    print("6 is not accepted")
 ```
 
 ### OUTPUT
 
+![LAB4 DAY2](https://github.com/user-attachments/assets/e2cb6462-1560-47db-8daf-b81c9c824e69)
+
 ### RESULT
+Thus, the Python program to handle IndexError using exception handling has been implemented and executed successfully.
