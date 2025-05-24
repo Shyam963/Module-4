@@ -1,45 +1,69 @@
 # Exp.No:20  
-## SEB - ARITHMETIC CALCULATION USING CLASS
+## SEB -  Multiplication and Floor Division Using Class and if-elif
+
 
 ---
 
 ### AIM  
-To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
+To create a Python program using a class named CSE with functions setvalues, mul, and div, and use user choices to perform multiplication, floor division, or exit.
+
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Create a class `Saveetha`.  
-3. Define the following methods inside the `Saveetha` class:  
-   - `__init__(self)`: Initializes `a` and `b` to zero.  
-   - `setvalues(self, a, b)`: Sets the values of `a` and `b`.  
-   - `add(self)`: Performs the addition operation.  
-   - `div(self)`: Performs the division operation. If `b` is zero, returns an error message for division by zero.  
-4. Create a `main()` function.  
-5. Take input from the user for the values of `a` and `b` using `setvalues(a, b)` method.  
-6. Use a `while True` loop to repeatedly ask the user for a choice:  
-   - If the choice is 1, call the `add()` method and print the result.  
-   - If the choice is 2, call the `div()` method and print the result. Handle division by zero.  
-   - If the choice is 0, print "Exiting!" and exit the loop.  
-   - If the choice is not 1, 2, or 0, print "Invalid choice".  
-7. Terminate the program.
+1.	Begin the program.
+2.	Define a class CSE.
+3.	Inside the class, define:
+   o	setvalues(a, b) to assign values to instance variables.
+   o	mul() to perform multiplication.
+   o	div() to perform floor division.
+4.	Create an object of the class.
+5.	Accept two numbers and a choice from the user.
+6.	Use if-elif-else to execute based on choice:
+   o	Choice 1: Call mul()
+   o	Choice 2: Call div()
+   o	Choice 0: Print "Exiting!"
+   o	Other: Print "Invalid choice"
+7.	Terminate the program.
 
 ---
 
 ### PROGRAM
 
 ```
-
+#Reg.NO:212222220045
+#Name:S SHyam
+class cse:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def mul(self):
+        return self.a*self.b
+    def div(self):
+        return self.a//self.b
+a=int(input())
+b=int(input())
+obj=cse(a,b)
+choice=1
+while choice!=0:
+    choice=int(input())
+    if choice==1:
+        print("Result: ",obj.mul())
+    elif choice==2:
+        print("Result: ",obj.div())
+    elif choice==0:
+        print("Exiting!")
+    else:
+        print("Invalid choice!")
 
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/22fd91ec-8374-4ca1-9c95-bb17b0f159ea)
+
+
 ### RESULT
+Thus, the Python program using class CSE to perform multiplication and floor division has been implemented and executed successfully.
